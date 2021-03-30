@@ -1,0 +1,21 @@
+
+  
+
+
+      
+<ul *ngIf="treeData" style="padding-inline-start: 20px;">
+  <li *ngFor="let node of treeData">
+      <span *ngIf= "!node.expanded"  ><i (click)="toggleChild(node)"  *ngIf="node.children != 0 " class="fas fa-angle-right"></i></span>
+      <span  *ngIf= "node.expanded"  ><i (click)="toggleChild(node)"*ngIf="node.children != 0" class="fas fa-chevron-down"></i></span>
+      <span (click)="opencomponent(node)" > {{ node.name }} </span>
+      <app-tree *ngIf="node.showChildren" [treeData]="node.children"></app-tree>
+  </li>  
+</ul>
+
+
+
+
+
+
+
+

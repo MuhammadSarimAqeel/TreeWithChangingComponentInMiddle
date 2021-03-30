@@ -1,0 +1,32 @@
+
+<nav class="navbar  navbar-primary bg-primary">
+  <i class="fas fa-bars  btn-lg" (click)="show = !show" style="color: white;" ></i>
+  
+
+ 
+
+
+  
+    <h6 style="color: white;">{{ title }}!</h6>
+  
+  <ngx-nav-drawer [(open)]="show" (click)="close()" >
+   <div class="container mt-2">
+    <i class="fas fa-times" (click)="close()" style="float: right;" ></i>
+  </div>
+<div class="conatiner" style="margin-top: 50px;">
+    <app-tree [treeData]="nodes"></app-tree>
+  </div>
+  
+  </ngx-nav-drawer>
+</nav>
+
+  <div class="card" style="height: 1000px; width: 750px; ">
+    <div class="container text-center" style="margin-top: 50px;">
+  <router-outlet></router-outlet>
+</div>
+</div>
+
+
+
+
+

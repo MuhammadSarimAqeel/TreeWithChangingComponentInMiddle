@@ -1,0 +1,41 @@
+<nav class="navbar  navbar-primary bg-primary">
+
+  <h1 style="color: white; margin-left: 400px;">{{ title }}!</h1>
+
+</nav>
+
+<div class="row ">
+  <div class="col-md-2 ">
+    <div class="card" style=" height: 600px; width: 250px;">
+      <div class="container mt-4 mr-4">
+<app-tree [treeData]="nodes"></app-tree>
+</div>
+</div>
+</div>
+<div class="col-md-8 ">
+
+  <div class="card ml-4" style="width: 1000px; height: 600px; margin-left: 40px;">
+    <div class="container text-center mt-4 ">
+      <div class="container">
+        <breadcrumb #parent>
+        <ol class="breadcrumb" >
+          <ng-template  ngFor let-route  [ngForOf]="parent.breadcrumbs">
+<li *ngIf ="!route.terminal" class="breadcrumb-item">
+<a href="#" [routerLink]="[route.url]">{{route.displayName}}</a>
+</li>
+<li *ngIf ="route.terminal" class="breadcrumb-item active">{{route.displayName}}</li>
+
+          </ng-template>
+        </ol>
+        </breadcrumb>
+      </div>
+<router-outlet>
+
+</router-outlet>
+
+
+</div>
+</div>
+<!-- <button (click)="getScreenSize($event)">Get Screen Resolution</button> -->
+</div>
+</div>
