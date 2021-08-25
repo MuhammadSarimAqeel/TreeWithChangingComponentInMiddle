@@ -46,7 +46,7 @@ nodes =NODES;
         this.router.navigate(['/tabhome/africa/processchild'])
       }
     if(this.service.isMobile()){
-      this.router.navigate(['/mobhome/africa/processchild']).then(() => {
+      this.router.navigate(['/mobhome/africa']).then(() => {
         window.location.reload();
       });
 }     
@@ -76,7 +76,7 @@ nodes =NODES;
         this.router.navigate(['/tabhome/africa/algeria/algeris'])
       }
       if(this.service.isMobile()){
-      this.router.navigate(['/mobhome/africa/algeria/algeris']).then(() => {
+      this.router.navigate(['/mobhome/algeris']).then(() => {
         window.location.reload();
       });
       }
@@ -89,7 +89,7 @@ nodes =NODES;
         this.router.navigate(['/tabhome/africa/algeria'])
       }
       if(this.service.isMobile()){
-      this.router.navigate(['/mobhome/africa/algeria']).then(() => {
+      this.router.navigate(['/mobhome/algeria']).then(() => {
         window.location.reload();
       });
       }
@@ -102,7 +102,7 @@ nodes =NODES;
         this.router.navigate(['/tabhome/africa/angola'])
       }
      if(this.service.isMobile()){
-      this.router.navigate(['/mobhome/africa/angola']).then(() => {
+      this.router.navigate(['/mobhome/angola']).then(() => {
         window.location.reload();
       });
      }
@@ -117,7 +117,7 @@ nodes =NODES;
         this.router.navigate(['/tabhome/africa/benin'])
       }
      if(this.service.isMobile()){
-      this.router.navigate(['/mobhome/africa/benin']).then(() => {
+      this.router.navigate(['/mobhome/benin']).then(() => {
         window.location.reload();
       });
      }
